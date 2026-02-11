@@ -46,6 +46,7 @@ Depois desses passos, abra um terminal Powershell normalmente e rode:
 python --version
 ~~~
 
+Se aparecer algo como 3.14.3, Python instalado com sucesso! 
 
 ---
 
