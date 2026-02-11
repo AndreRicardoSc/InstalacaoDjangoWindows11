@@ -14,7 +14,7 @@ Pode deixar tudo como está configurado, porém, preste atenção no caminho que
 C:\Users\SEU USUÁRIO\AppData\Local\Programs\Python\Python314\
 ~~~
 
-> Substitua **SEU USUÁRIO** pelo nome do usuário que estiver na sua máquina
+> **ATENÇÃO:** Guarde esse caminho com o seu nome de usuário pois iremos usar
 
 ---
 
