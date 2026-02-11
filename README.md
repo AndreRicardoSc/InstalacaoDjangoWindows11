@@ -2,7 +2,7 @@
 
 ## 01 - Instalação do Python :snake:
 
-### Instalador
+### Instalador do Python
 
 Primeiro precisaremos instalar o [Python 3.14.3 - Feb. 3, 2026](https://www.python.org/ftp/python/3.14.3/python-3.14.3-amd64.exe) (última versão)
 
