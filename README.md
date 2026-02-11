@@ -130,9 +130,44 @@ ls -l pdm.lock
 ~~~
 pdm run django-admin startproject config .
 ~~~
-- Rode os comandos de migração:
+- Rode os comandos de migração do banco de dados:
 
-Primeiro:
+Primeiro, para preparar as migrações:
+~~~
+pdm run python manage.py makemigrations
+~~~
+
+Depois, para executar as migrações:
 ~~~
 pdm run python manage.py migrate
+~~~
+
+- Para poder acessar a aba de admin, execute:
+~~~
+pdm run python manage.py createsuperuser
+~~~
+Irá se deparar com uma tela dessa:
+~~~
+Username (leave blank to use 'zetec'): admin
+Email address: admin@admin.com
+Password: 
+Password (again): 
+The password is too similar to the username.
+This password is too short. It must contain at least 8 characters.
+This password is too common.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+~~~
+Reponda admin em tudo para maior facilidade de desenvolvimento
+- Rode o sistema:
+~~~
+pdm run python manage.py runserver
+~~~
+- Se tudo correu bem, o sistema estará rodando na porta:
+~~~
+http://localhost:8000/
+~~~
+- Para acessar o admin:
+~~~
+http://localhost:8000/admin/
 ~~~
