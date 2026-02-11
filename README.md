@@ -43,7 +43,7 @@ C:\Users\SEU USUÁRIO\AppData\Local\Programs\Python\Python314\Scripts\
 Depois desses passos, abra um terminal Powershell normalmente e rode:
 
 ~~~
-python --version
+python -V
 ~~~
 
 Se aparecer algo como 3.14.3, Python instalado com sucesso! 
@@ -51,8 +51,68 @@ Se aparecer algo como 3.14.3, Python instalado com sucesso!
 ---
 
 
-## Instalação do PDM (Python Package and Dependency Manager) :computer:
+## 02 - Instalação do PDM (Python Package and Dependency Manager) :computer:
+
+Depois de instalar o Python, precisamos do gerenciador de pacotes e dependência (PDM)
+
+Para instalar, abra o terminal e digite:
+~~~
+pip install pdm
+~~~
+Depois de instalado, feche o terminal, abra novamente e verifique a versão do PDM:
+~~~
+pdm -V
+~~~
+Deve aparecer algo como:
+> PDM, version 2.26.6
+
+Se estiver em qualquer outra versão, atualize com o comando:
+~~~
+pip install --upgrade pdm
+~~~
+Feche, abra o terminal e verifique novamente. Agora sim deve aparecer:
+> PDM, version 2.26.6
+
+Se aparecer essa mensagem, PDM foi instalado com sucesso! :white_check_mark:
 
 
+---
+
+
+## 03 - Inicialização de projeto com Django :page_facing_up:
+
+Com o PDM instalado, iniciar um novo projeto
+
+- Crie uma pasta para o projeto com o nome que preferir
+~~~
+mkdir meu_projeto
+~~~
+- Caminhe até a pasta:
+~~~
+cd meu_projeto
+~~~
+- Inicie um projeto com PDM
+~~~
+pdm init
+~~~
+- Você passará por uma tela como essa, pode responder como aqui:
+~~~
+Creating a pyproject.toml for PDM...
+Please enter the Python interpreter to use
+ 0. cpython@3.14 (C:\Users\ZETEC\AppData\Local\Programs\Python\Python314\python.EXE)
+ 1. cpython@3.13 (C:\Program Files\Python313\python.exe)
+Please select (0): 0
+Virtualenv is created successfully at D:\01 - ZETEC\Documents\2026\desweb\meu_projeto\.venv
+Project name (meu_projeto): meu_projeto
+Project version (0.1.0):
+Do you want to build this project for distribution(such as wheel)?
+If yes, it will be installed by default when running `pdm install`. [y/n] (n): n
+License(SPDX name) (MIT):
+Author name (AndreRicardoSc):
+Author email (andrenarutto7@gmail.com):
+Python requires('*' to allow any) (==3.14.*): *
+INFO: Git repository initialized successfully.
+Project is initialized successfully
+~~~
 
 
