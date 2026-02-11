@@ -114,5 +114,25 @@ Python requires('*' to allow any) (==3.14.*): *
 INFO: Git repository initialized successfully.
 Project is initialized successfully
 ~~~
+- Depois disso, pode abrir seu projeto no VsCode
+~~~
+code .
+~~~
+- Abra um terminal `Ctrl + J` e digite:
+~~~
+pdm add django
+~~~
+- Verifique se o arquivo `pdm.lock` foi criado:
+~~~
+ls -l pdm.lock
+~~~
+- Se foi criado, inicie um projeto Django:
+~~~
+pdm run django-admin startproject config .
+~~~
+- Rode os comandos de migração:
 
-
+Primeiro:
+~~~
+pdm run python manage.py migrate
+~~~
